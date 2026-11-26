@@ -6,7 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-css-fix": "npx stylelint '**/*.scss' --fix",
+    "eslint": "npx eslint '**/*.js'",
+    "html-lint": "npm exec html-validate index.html --fix",
+    "lint:scss": "stylelint \"**/*.scss\"",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.scss": "stylelint --fix"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
