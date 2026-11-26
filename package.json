@@ -9,6 +9,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "html-validate": "^11.4.0",
+    "lint-staged": "^16.4.0",
+    "sass": "^1.108.2",
+    "simple-git-hooks": "^2.14.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-scss": "^7.4.0",
     "@vitejs/devtools": "^0.8.3",
     "@vitejs/devtools-rolldown": "^0.8.3",
     "@vitejs/devtools-vite": "^0.8.3",
